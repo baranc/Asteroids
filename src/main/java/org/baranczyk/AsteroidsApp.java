@@ -11,16 +11,17 @@ import javafx.stage.Stage;
 /**
  * JavaFX App
  */
-public class PaneExample extends Application {
+public class AsteroidsApp extends Application {
 
     @Override
     public void start(Stage stage) {
         var pane = new Pane();
-        pane.setPrefSize(300,200);
-        pane.getChildren().add(new Circle(30,50,10));
+        pane.setPrefSize(600,400);
+
 
 
         var scene = new Scene(pane);
+        stage.setTitle("Asteroids");
         stage.setScene(scene);
         stage.show();
     }
